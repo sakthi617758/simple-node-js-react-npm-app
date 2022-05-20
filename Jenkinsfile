@@ -1,11 +1,11 @@
 pipeline {
     agent {
         docker {
-            image 'node:lts-buster-alpine'
+            image 'node:current-alpine3.14'
             args '-p 3000:3000'
         }
     }
-    // environment {
+    // envionment {
     //     CI = 'true'
     // }
     stages {
