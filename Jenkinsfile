@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image ' myjenkins-blueocean:2.332.3-1'
+            image 'myjenkins-blueocean:2.332.3-1'
             args '-p 3000:3000'
         }
     }
