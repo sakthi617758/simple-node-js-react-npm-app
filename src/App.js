@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> This is the First test code commit with webhook oh git. 
+          To get started, edit <code>src/App.js</code> This is the First test code commit with push webhook oh git. 
         </p>
       </div>
     );
