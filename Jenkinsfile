@@ -1,12 +1,13 @@
 pipeline {
     agent any
+     tools {
+        nodejs '16.15.0'
+     }
 
-    tools {nodejs "node"}
-
-    stages {
+        stages {
         stage('Build') {
             steps {
-            sh 'npm install'
+                sh 'npm install'
             }
         }
         stage('Test') {
@@ -19,6 +20,6 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh' 
                 sh './jenkins/scripts/kill.sh'
             }
-        }   
-    }
+        }
+    }    
 }
