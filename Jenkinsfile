@@ -20,5 +20,8 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh' 
             }
         }
+        stage("speak") {
+        slackSend color: '#BADA55', message: 'Hello, World!', channel: #asaka-front-end
+        }
     }    
 }
